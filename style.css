@@ -1,0 +1,213 @@
+:root {
+  --bs-primary:#6C55F9;
+  --bs-primary-rgb: 108, 85, 249;
+  --bs-secondary:#645f88;
+  --bs-secondary-rgb: 100, 95, 136;
+}
+
+body {
+  font-family: "Work Sans";
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #6C55F9;
+  --bs-btn-border-color:#6C55F9;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg:#645F88;
+  --bs-btn-hover-border-color:#645F88;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #6C55F9;
+  --bs-btn-active-border-color: #6C55F9;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg:#6C55F9;
+  --bs-btn-disabled-border-color:#6C55F9;
+}
+
+.btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg:#B8B4D5;
+  --bs-btn-border-color: #B8B4D5;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #B8B4D5;
+  --bs-btn-hover-border-color: #B8B4D5;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #B8B4D5;
+  --bs-btn-active-border-color: #B8B4D5;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #B8B4D5;
+  --bs-btn-disabled-border-color: #B8B4D5;
+}
+
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #198754;
+  --bs-btn-border-color: #198754;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg:#585282;
+  --bs-btn-hover-border-color: #146c43;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #146c43;
+  --bs-btn-active-border-color: #13653f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #198754;
+  --bs-btn-disabled-border-color: #198754 ;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.bg {
+  background-color: #F6F5FC;
+}
+
+.padding-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.padding-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-title {
+  position: relative;
+}
+.section-title h2 {
+  letter-spacing: 2px;
+}
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 3%;
+  height: 3px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 5px;
+  background-color: var(--bs-primary);
+}
+
+.footer-bg {
+  background: url(../img/world_pattern.svg) #2D2B3A;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-bg .footer-icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  line-height: 40px;
+  transition: all 0.5s;
+}
+.footer-bg .footer-icon:hover {
+  background-color: var(--bs-primary) !important;
+  color: white !important;
+  transform: rotate(360deg);
+}
+.footer-bg ul li {
+  cursor: pointer;
+}
+.footer-bg ul li:hover {
+  --bs-text-opacity:1 !important;
+}
+.footer-bg .btn-block {
+  display: block;
+  width: 100%;
+}
+.footer-bg .footer-bg .btn-success {
+  background-color: #35bb78 !important;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.footer-bg .footer-bg .btn-success:hover {
+  background-color: #585282 !important;
+}
+
+.contact-details-text {
+  text-decoration: none;
+}
+.contact-details-text:hover {
+  text-decoration: underline;
+}
+
+.team {
+  background-color: #f6f5fc;
+}
+
+.ico {
+  width: 50px;
+  height: 50px;
+  color: #000;
+  border-radius: 100px;
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 13px;
+  margin: auto;
+}
+.ico i {
+  color: #000;
+}
+
+.post-thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.post-thumb img {
+  width: auto;
+  height: 100%;
+}
+
+.post-title a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #645f88;
+}
+
+.card-blog {
+  display: block;
+  margin: 0 auto;
+  max-width: 280px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(100, 95, 136, 0.16);
+  overflow: hidden;
+}
+.card-blog .body {
+  padding: 20px;
+}
+.card-blog .body h5 {
+  text-align: left;
+  margin-left: 0;
+}
+.card-blog .body h5 a {
+  text-decoration: none;
+}
+.card-blog .body h5 a:hover {
+  color: var(--bs-primary) !important;
+}
+.card-blog .body .post-date {
+  text-align: left;
+  font-size: 13px;
+}
+.card-blog .body .post-date a {
+  text-decoration: none;
+}
+.card-blog .body .post-date a:hover {
+  text-decoration: underline;
+}
+
+.view {
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */
